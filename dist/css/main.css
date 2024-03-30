@@ -1,5 +1,71 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: red;
-}/*# sourceMappingURL=main.css.map */
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 100px;
+  box-shadow: 0 0 15px gray;
+}
+.navbar .navbar-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border: 1px solid blue;
+}
+.navbar .logo-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 1.25em;
+}
+.navbar .logo-brand img {
+  height: 70px;
+  margin-left: 1em;
+}
+.navbar .logo-brand h5 {
+  font-size: 2.5em;
+}
+.navbar .nav-items {
+  display: flex;
+  margin-left: 1.5em;
+}
+.navbar .nav-items ul {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.navbar .nav-items ul li {
+  list-style: none;
+}
+.navbar .nav-items ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25em;
+}
+.navbar .nav-login {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+  margin-left: auto;
+  gap: 5px;
+}
+.navbar .nav-login h5 {
+  font-size: 1.5em;
+}
+.navbar .nav-login button {
+  border: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 4px 8px;
+  background-color: transparent;
+  font-size: 1.25em;
+}
+.navbar .nav-login .signup {
+  background-color: blue;
+  color: white;
+}
+
+/* Small devices such as large phones (640px and up) */
+/* Medium devices such as tablets (768px and up) */
+/* Large devices such as laptops (1024px and up) *//*# sourceMappingURL=main.css.map */
