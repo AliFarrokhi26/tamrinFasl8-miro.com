@@ -23,7 +23,7 @@
         // border: 1px solid blue;
 
         img {
-            height: 70px;
+            height: 45px;
             margin-left: 1em;
         }
     }
@@ -92,6 +92,49 @@
 
 }
 
+.slide-images {
+    text-align: center;
+    .slide-images-container {
+        h1 {
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+            margin-top: 15px;
+
+        }
+
+        .image-slider-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            overflow: auto;
+            justify-items: center;
+            .boxes{
+                width: 300px;
+                height: 300px;
+                background-color: green;
+                margin: 5px;
+            }
+            .box1{
+
+                background-color: red;
+            }
+            .box2{
+
+                background-color: blue;
+            }
+            .box3{
+
+                background-color: aqua;
+            }
+            .box4{
+
+                background-color: green;
+            }
+        }
+    }
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -114,7 +157,7 @@
             // border: 1px solid blue;
 
             img {
-                height: 70px;
+                height: 45px;
                 margin-left: 1em;
             }
 
@@ -236,6 +279,44 @@
         }
 
     }
+
+    .slide-images {
+        text-align: center;
+        .slide-images-container {
+            h1 {
+                font-size: 30px;
+            }
+    
+            .image-slider-container{
+                display: grid;
+                grid-template-columns:repeat(4,1fr);
+                overflow:auto;
+                justify-items: center;
+                .boxes{
+                    width: 300px;
+                    height: 300px;
+                    background-color: white;
+                    margin: 5px;
+                }
+                .box1{
+
+                    background-color: red;
+                }
+                .box2{
+
+                    background-color: blue;
+                }
+                .box3{
+
+                    background-color: green;
+                }
+                .box4{
+
+                    background-color: yellow;
+                }
+            }
+        }
+    }
 }
 
 
@@ -267,7 +348,7 @@
             }
 
             img {
-                height: 70px;
+                height: 45px;
                 margin-left: 1em;
             }
         }
@@ -285,7 +366,7 @@
 
                 li {
                     list-style: none;
-                    padding: 12px 12px;
+                    padding: 12px 8px;
                     border-radius: 10px;
 
                     &:hover {
