@@ -94,40 +94,47 @@
 
 .slide-images {
     text-align: center;
+
     .slide-images-container {
         h1 {
             font-size: 20px;
         }
-        p{
+
+        p {
             font-size: 16px;
             margin-top: 15px;
 
         }
 
-        .image-slider-container{
+        .image-slider-container {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
             overflow: auto;
             justify-items: center;
-            .boxes{
+
+            .boxes {
                 width: 300px;
                 height: 300px;
                 background-color: green;
                 margin: 5px;
             }
-            .box1{
+
+            .box1 {
 
                 background-color: red;
             }
-            .box2{
+
+            .box2 {
 
                 background-color: blue;
             }
-            .box3{
+
+            .box3 {
 
                 background-color: aqua;
             }
-            .box4{
+
+            .box4 {
 
                 background-color: green;
             }
@@ -135,6 +142,113 @@
     }
 }
 
+.footer-container {
+    background-color: $bs-gray-900;
+    color: $bs-white;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+
+    .footer-signup {
+        // margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        // justify-self: center;
+        // align-items: center;
+        text-align: center;
+        margin: 25px auto;
+
+        h4,
+        h5 {
+            font-weight: normal;
+
+        }
+
+        h4 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        h5 {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        .input-group {
+            display: flex;
+
+            input {
+                border: none;
+                padding: 10px 25px;
+                border-radius: 10px 0 0 10px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                border: none;
+                padding: 10px 25px;
+                border-radius: 0 10px 10px 0;
+                background-color: $bs-primary;
+                color: $bs-white;
+
+                &:hover {
+                    background-color: $color-blue-900;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .list-items {
+        margin: 25px 0;
+
+        .list-items-container {
+            .list {
+                text-align: start;
+                padding-left: 25px;
+                margin: 15px 0;
+                // border-bottom: 1px solid $bs-gray-500;
+                padding-bottom: 10px;
+                box-shadow: 0 1px 1px $bs-gray-500;
+
+                ul {
+                    list-style: none;
+                    display: none;
+                    transition: all .5s ease;
+
+                    li {
+                        padding: 10px 0 10px 25px;
+                    }
+                }
+
+                &:hover {
+                    ul {
+                        display: block;
+                        // transition: all ease-in 10s;
+                        transition: all linear 3s;
+
+                    }
+                }
+
+                h4 {
+                    font-weight: normal;
+                    margin: 10px 0;
+
+                }
+
+                // border:1px solid red;
+            }
+
+            .list5 {
+                box-shadow: none;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 768px) {
 
@@ -282,35 +396,41 @@
 
     .slide-images {
         text-align: center;
+
         .slide-images-container {
             h1 {
                 font-size: 30px;
             }
-    
-            .image-slider-container{
+
+            .image-slider-container {
                 display: grid;
-                grid-template-columns:repeat(4,1fr);
-                overflow:auto;
+                grid-template-columns: repeat(4, 1fr);
+                overflow: auto;
                 justify-items: center;
-                .boxes{
+
+                .boxes {
                     width: 300px;
                     height: 300px;
                     background-color: white;
                     margin: 5px;
                 }
-                .box1{
+
+                .box1 {
 
                     background-color: red;
                 }
-                .box2{
+
+                .box2 {
 
                     background-color: blue;
                 }
-                .box3{
+
+                .box3 {
 
                     background-color: green;
                 }
-                .box4{
+
+                .box4 {
 
                     background-color: yellow;
                 }
@@ -496,39 +616,46 @@
         }
 
     }
+
     .slide-images {
         text-align: center;
         margin: 75px 0;
+
         .slide-images-container {
             h1 {
                 font-size: 30px;
             }
-    
-            .image-slider-container{
+
+            .image-slider-container {
                 display: grid;
-                grid-template-columns:repeat(4,1fr);
-                overflow:auto;
+                grid-template-columns: repeat(4, 1fr);
+                overflow: auto;
                 justify-items: center;
                 margin: 25px 0;
-                .boxes{
+
+                .boxes {
                     width: 300px;
                     height: 300px;
                     background-color: white;
                     margin: 5px;
                 }
-                .box1{
+
+                .box1 {
 
                     background-color: red;
                 }
-                .box2{
+
+                .box2 {
 
                     background-color: blue;
                 }
-                .box3{
+
+                .box3 {
 
                     background-color: green;
                 }
-                .box4{
+
+                .box4 {
 
                     background-color: yellow;
                 }
