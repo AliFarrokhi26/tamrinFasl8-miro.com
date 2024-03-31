@@ -141,7 +141,7 @@ small,
 
 @media screen and (min-width: 768px) {
   .navbar {
-    height: 100px;
+    height: 75px;
     box-shadow: 0 0 10px gray;
   }
   .navbar .navbar-container {
@@ -249,20 +249,23 @@ small,
 }
 @media only screen and (min-width: 1200px) {
   .navbar {
-    height: 100px;
+    height: 75px;
     box-shadow: 0 0 10px gray;
   }
   .navbar .navbar-container {
     display: flex;
     height: 100%;
     width: 100%;
-    max-width: 1250px;
+    max-width: 1350px;
     margin: 0 auto;
   }
   .navbar .logo-brand {
     display: flex;
     align-items: center;
     margin-left: 1.25em;
+  }
+  .navbar .logo-brand i {
+    display: none;
   }
   .navbar .logo-brand img {
     height: 70px;

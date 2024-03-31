@@ -37,41 +37,46 @@
     }
 }
 
-.signup-banner{
+.signup-banner {
     margin: 25px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    h3{
+
+    h3 {
         font-weight: normal;
     }
-    h6{
+
+    h6 {
         font-weight: normal;
         font-size: 16px;
     }
-    
-    .signup-banner-container{
+
+    .signup-banner-container {
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        form{
+
+        form {
             width: 100%;
-            input{
+
+            input {
                 border: none;
                 border: 1px solid $bs-gray-700 ;
                 border-radius: 10px;
                 padding: 15px 20px;
                 width: 100%;
-               
-                &:focus{
+
+                &:focus {
                     outline: none;
                 }
             }
         }
-        button{
+
+        button {
             width: 100%;
             padding: 10px 0;
             background-color: $bs-primary;
@@ -91,7 +96,7 @@
 @media screen and (min-width: 768px) {
 
     .navbar {
-        height: 100px;
+        height: 75px;
         // border: 1px solid red;
         box-shadow: 0 0 10px gray;
 
@@ -119,6 +124,7 @@
         .nav-items {
             display: none;
         }
+
         //?------------------------------------------------
         .nav-login {
             display: flex;
@@ -173,21 +179,23 @@
         }
     }
 
-    .signup-banner{
+    .signup-banner {
         margin: 25px 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        h3{
+
+        h3 {
             font-weight: normal;
             font-size: 45px;
         }
-        h6{
+
+        h6 {
             font-weight: normal;
             font-size: 20px;
         }
-        
-        .signup-banner-container{
+
+        .signup-banner-container {
             // border: 1px solid red;
             width: 100%;
             text-align: center;
@@ -196,21 +204,24 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
-            form{
+
+            form {
                 width: $width350px;
-                input{
+
+                input {
                     border: none;
                     border: 1px solid $bs-gray-700 ;
                     border-radius: 10px;
                     padding: 15px 20px;
                     width: 100%;
-                   
-                    &:focus{
+
+                    &:focus {
                         outline: none;
                     }
                 }
             }
-            button{
+
+            button {
                 width: $width350px;
                 padding: 10px 0;
                 background-color: $bs-primary;
@@ -218,12 +229,12 @@
                 border: none;
                 border-radius: 5px;
                 font-size: 1.25em;
-    
-    
+
+
             }
-    
+
         }
-    
+
     }
 }
 
@@ -232,7 +243,7 @@
 @media only screen and (min-width: 1200px) {
 
     .navbar {
-        height: 100px;
+        height: 75px;
         // border: 1px solid red;
         box-shadow: 0 0 10px gray;
 
@@ -240,7 +251,7 @@
             display: flex;
             height: 100%;
             width: 100%;
-            max-width: 1250px;
+            max-width: 1350px;
             margin: 0 auto;
             // border: 1px solid blue;
         }
@@ -249,7 +260,11 @@
             display: flex;
             align-items: center;
             margin-left: 1.25em;
+
             // border: 1px solid blue;
+            i {
+                display: none;
+            }
 
             img {
                 height: 70px;
@@ -343,21 +358,23 @@
         }
     }
 
-    .signup-banner{
+    .signup-banner {
         margin: 25px 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        h3{
+
+        h3 {
             font-weight: normal;
             font-size: 55px;
         }
-        h6{
+
+        h6 {
             font-weight: normal;
             font-size: 22px;
         }
-        
-        .signup-banner-container{
+
+        .signup-banner-container {
             // border: 1px solid red;
             width: 100%;
             text-align: center;
@@ -366,21 +383,24 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
-            form{
+
+            form {
                 width: $width400px;
-                input{
+
+                input {
                     border: none;
                     border: 1px solid $bs-gray-700 ;
                     border-radius: 10px;
                     padding: 15px 20px;
                     width: 100%;
-                   
-                    &:focus{
+
+                    &:focus {
                         outline: none;
                     }
                 }
             }
-            button{
+
+            button {
                 width: $width400px;
                 padding: 10px 0;
                 background-color: $bs-primary;
@@ -388,12 +408,11 @@
                 border: none;
                 border-radius: 5px;
                 font-size: 1.25em;
-    
-    
+
+
             }
-    
+
         }
-    
+
     }
 }
-
