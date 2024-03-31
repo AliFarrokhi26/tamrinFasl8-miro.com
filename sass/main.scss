@@ -1,19 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import './reset';
+@import './variables';
+@import './typography';
+
 
 .navbar {
-    height: 100px;
+    height: 70px;
     // border: 1px solid red;
-    box-shadow: 0 0 15px gray;
+    box-shadow: 0 0 1px black;
+    background-color: $bs-white;
 
     .navbar-container {
         display: flex;
         height: 100%;
         width: 100%;
-        border: 1px solid blue;
+        // border: 1px solid blue;
     }
 
     .logo-brand {
@@ -26,69 +26,374 @@
             height: 70px;
             margin-left: 1em;
         }
-
-        h5 {
-            font-size: 2.5em;
-        }
     }
 
     .nav-items {
-        display: flex;
-        margin-left: 1.5em;
-        // border: 1px solid green;
+        display: none;
+    }
 
-        ul {
+    .nav-login {
+        display: none;
+    }
+}
+
+.signup-banner{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-weight: normal;
+    }
+    h6{
+        font-weight: normal;
+        font-size: 16px;
+    }
+    
+    .signup-banner-container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        form{
+            width: 100%;
+            input{
+                border: none;
+                border: 1px solid $bs-gray-700 ;
+                border-radius: 10px;
+                padding: 15px 20px;
+                width: 100%;
+               
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        button{
+            width: 100%;
+            padding: 10px 0;
+            background-color: $bs-primary;
+            color: $bs-white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.25em;
+
+
+        }
+
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        height: 100px;
+        // border: 1px solid red;
+        box-shadow: 0 0 10px gray;
+
+        .navbar-container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            // border: 1px solid blue;
+        }
+
+        .logo-brand {
             display: flex;
             align-items: center;
-            text-transform: capitalize;
+            margin-left: 1.25em;
+            // border: 1px solid blue;
 
-            li {
-                list-style: none;
+            img {
+                height: 70px;
+                margin-left: 1em;
+            }
 
+
+        }
+
+        .nav-items {
+            display: none;
+        }
+        //?------------------------------------------------
+        .nav-login {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 15px;
+            gap: 5px;
+
+            h5 {
                 a {
                     text-decoration: none;
+                    font-weight: normal;
                     color: black;
-                    font-size: 1.25em;
+                    padding: 12px 12px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                        background-color: $li-hover-color;
+                    }
+
                 }
+            }
+
+
+            button {
+                border: none;
+                border: 1px solid $bs-black;
+                border-radius: 8px;
+                padding: 16px 16px;
+                background-color: transparent;
+                text-transform: capitalize;
+                font-weight: bold;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $bs-black;
+                    color: $bs-white;
+                }
+            }
+
+            .signup {
+                background-color: $bs-blue;
+                border: 1px solid $bs-blue;
+                color: white;
+
+                &:hover {
+                    background-color: $color-blue-900;
+                }
+
             }
         }
     }
 
-    .nav-login {
+    .signup-banner{
+        margin: 25px 0;
         display: flex;
+        justify-content: center;
         align-items: center;
-        font-size: 1.25em;
-        margin-left: auto;
-        gap: 5px;
-
-        h5 {
-            font-size: 1.5em;
-
+        h3{
+            font-weight: normal;
+            font-size: 45px;
         }
-
-        button {
-            border: none;
-            border: 1px solid gray;
-            border-radius: 8px;
-            padding: 4px 8px;
-            background-color: transparent;
-            font-size: 1.25em;
+        h6{
+            font-weight: normal;
+            font-size: 20px;
         }
-
-        .signup {
-            background-color: blue;
-            color: white;
+        
+        .signup-banner-container{
+            // border: 1px solid red;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            form{
+                width: $width350px;
+                input{
+                    border: none;
+                    border: 1px solid $bs-gray-700 ;
+                    border-radius: 10px;
+                    padding: 15px 20px;
+                    width: 100%;
+                   
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            button{
+                width: $width350px;
+                padding: 10px 0;
+                background-color: $bs-primary;
+                color: $bs-white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.25em;
+    
+    
+            }
+    
         }
+    
     }
 }
 
 
-/* Small devices such as large phones (640px and up) */
-// 576
-// @media only screen and (min-width: 40em) {...}
 
-/* Medium devices such as tablets (768px and up) */
-// @media only screen and (min-width: 48em) {...}
+@media only screen and (min-width: 1200px) {
 
-/* Large devices such as laptops (1024px and up) */
-// @media only screen and (min-width: 64em) {...}
+    .navbar {
+        height: 100px;
+        // border: 1px solid red;
+        box-shadow: 0 0 10px gray;
+
+        .navbar-container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            max-width: 1250px;
+            margin: 0 auto;
+            // border: 1px solid blue;
+        }
+
+        .logo-brand {
+            display: flex;
+            align-items: center;
+            margin-left: 1.25em;
+            // border: 1px solid blue;
+
+            img {
+                height: 70px;
+                margin-left: 1em;
+            }
+        }
+
+        .nav-items {
+            display: flex;
+            margin-left: 1.5em;
+            // border: 1px solid green;
+
+            ul {
+                display: flex;
+                align-items: center;
+                text-transform: capitalize;
+                gap: 15px;
+
+                li {
+                    list-style: none;
+                    padding: 12px 12px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: $li-hover-color;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    // background-color: red;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                    }
+                }
+            }
+        }
+
+        .nav-login {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 15px;
+            gap: 5px;
+
+            h5 {
+                a {
+                    text-decoration: none;
+                    font-weight: normal;
+                    color: black;
+                    padding: 12px 12px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                        background-color: $li-hover-color;
+                    }
+
+                }
+            }
+
+
+            button {
+                border: none;
+                border: 1px solid $bs-black;
+                border-radius: 8px;
+                padding: 16px 16px;
+                background-color: transparent;
+                text-transform: capitalize;
+                font-weight: bold;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $bs-black;
+                    color: $bs-white;
+                }
+            }
+
+            .signup {
+                background-color: $bs-blue;
+                border: 1px solid $bs-blue;
+                color: white;
+
+                &:hover {
+                    background-color: $color-blue-900;
+                }
+
+            }
+        }
+    }
+
+    .signup-banner{
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3{
+            font-weight: normal;
+            font-size: 55px;
+        }
+        h6{
+            font-weight: normal;
+            font-size: 22px;
+        }
+        
+        .signup-banner-container{
+            // border: 1px solid red;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            form{
+                width: $width400px;
+                input{
+                    border: none;
+                    border: 1px solid $bs-gray-700 ;
+                    border-radius: 10px;
+                    padding: 15px 20px;
+                    width: 100%;
+                   
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            button{
+                width: $width400px;
+                padding: 10px 0;
+                background-color: $bs-primary;
+                color: $bs-white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.25em;
+    
+    
+            }
+    
+        }
+    
+    }
+}
+

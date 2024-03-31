@@ -4,15 +4,80 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fbf7ee;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: false;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: true;
+  line-height: 1.15;
+}
+
+h1,
+.text-size-h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 3.05em;
+}
+
+h2,
+.text-size-h2 {
+  font-size: 2.44em;
+}
+
+h3,
+.text-size-h3 {
+  font-size: 1.95em;
+}
+
+h4,
+.text-size-h4 {
+  font-size: 1.56em;
+}
+
+h5,
+.text-size-h5 {
+  font-size: 1.25em;
+}
+
+.text-caption {
+  font-size: 0.8em;
+}
+
+small,
+.text-small {
+  font-size: 0.64em;
+}
+
 .navbar {
-  height: 100px;
-  box-shadow: 0 0 15px gray;
+  height: 70px;
+  box-shadow: 0 0 1px black;
+  background-color: #fff;
 }
 .navbar .navbar-container {
   display: flex;
   height: 100%;
   width: 100%;
-  border: 1px solid blue;
 }
 .navbar .logo-brand {
   display: flex;
@@ -23,49 +88,293 @@
   height: 70px;
   margin-left: 1em;
 }
-.navbar .logo-brand h5 {
-  font-size: 2.5em;
-}
 .navbar .nav-items {
-  display: flex;
-  margin-left: 1.5em;
-}
-.navbar .nav-items ul {
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
-}
-.navbar .nav-items ul li {
-  list-style: none;
-}
-.navbar .nav-items ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.25em;
+  display: none;
 }
 .navbar .nav-login {
-  display: flex;
-  align-items: center;
-  font-size: 1.25em;
-  margin-left: auto;
-  gap: 5px;
-}
-.navbar .nav-login h5 {
-  font-size: 1.5em;
-}
-.navbar .nav-login button {
-  border: none;
-  border: 1px solid gray;
-  border-radius: 8px;
-  padding: 4px 8px;
-  background-color: transparent;
-  font-size: 1.25em;
-}
-.navbar .nav-login .signup {
-  background-color: blue;
-  color: white;
+  display: none;
 }
 
-/* Small devices such as large phones (640px and up) */
-/* Medium devices such as tablets (768px and up) */
-/* Large devices such as laptops (1024px and up) *//*# sourceMappingURL=main.css.map */
+.signup-banner {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-banner h3 {
+  font-weight: normal;
+}
+.signup-banner h6 {
+  font-weight: normal;
+  font-size: 16px;
+}
+.signup-banner .signup-banner-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.signup-banner .signup-banner-container form {
+  width: 100%;
+}
+.signup-banner .signup-banner-container form input {
+  border: none;
+  border: 1px solid #495057;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
+}
+.signup-banner .signup-banner-container form input:focus {
+  outline: none;
+}
+.signup-banner .signup-banner-container button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #4961f6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25em;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 100px;
+    box-shadow: 0 0 10px gray;
+  }
+  .navbar .navbar-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar .logo-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 1.25em;
+  }
+  .navbar .logo-brand img {
+    height: 70px;
+    margin-left: 1em;
+  }
+  .navbar .nav-items {
+    display: none;
+  }
+  .navbar .nav-login {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 15px;
+    gap: 5px;
+  }
+  .navbar .nav-login h5 a {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+    padding: 12px 12px;
+    border-radius: 10px;
+  }
+  .navbar .nav-login h5 a:hover {
+    text-decoration: underline;
+    background-color: rgb(228, 229, 229);
+  }
+  .navbar .nav-login button {
+    border: none;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 16px 16px;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  .navbar .nav-login button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+  }
+  .navbar .nav-login .signup {
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    color: white;
+  }
+  .navbar .nav-login .signup:hover {
+    background-color: rgba(0, 0, 255, 0.8);
+  }
+  .signup-banner {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup-banner h3 {
+    font-weight: normal;
+    font-size: 45px;
+  }
+  .signup-banner h6 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .signup-banner .signup-banner-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .signup-banner .signup-banner-container form {
+    width: 350px;
+  }
+  .signup-banner .signup-banner-container form input {
+    border: none;
+    border: 1px solid #495057;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 100%;
+  }
+  .signup-banner .signup-banner-container form input:focus {
+    outline: none;
+  }
+  .signup-banner .signup-banner-container button {
+    width: 350px;
+    padding: 10px 0;
+    background-color: #4961f6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    height: 100px;
+    box-shadow: 0 0 10px gray;
+  }
+  .navbar .navbar-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  .navbar .logo-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 1.25em;
+  }
+  .navbar .logo-brand img {
+    height: 70px;
+    margin-left: 1em;
+  }
+  .navbar .nav-items {
+    display: flex;
+    margin-left: 1.5em;
+  }
+  .navbar .nav-items ul {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 15px;
+  }
+  .navbar .nav-items ul li {
+    list-style: none;
+    padding: 12px 12px;
+    border-radius: 10px;
+  }
+  .navbar .nav-items ul li:hover {
+    background-color: rgb(228, 229, 229);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .navbar .nav-items ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar .nav-login {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 15px;
+    gap: 5px;
+  }
+  .navbar .nav-login h5 a {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+    padding: 12px 12px;
+    border-radius: 10px;
+  }
+  .navbar .nav-login h5 a:hover {
+    text-decoration: underline;
+    background-color: rgb(228, 229, 229);
+  }
+  .navbar .nav-login button {
+    border: none;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 16px 16px;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  .navbar .nav-login button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+  }
+  .navbar .nav-login .signup {
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    color: white;
+  }
+  .navbar .nav-login .signup:hover {
+    background-color: rgba(0, 0, 255, 0.8);
+  }
+  .signup-banner {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup-banner h3 {
+    font-weight: normal;
+    font-size: 55px;
+  }
+  .signup-banner h6 {
+    font-weight: normal;
+    font-size: 22px;
+  }
+  .signup-banner .signup-banner-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .signup-banner .signup-banner-container form {
+    width: 400px;
+  }
+  .signup-banner .signup-banner-container form input {
+    border: none;
+    border: 1px solid #495057;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 100%;
+  }
+  .signup-banner .signup-banner-container form input:focus {
+    outline: none;
+  }
+  .signup-banner .signup-banner-container button {
+    width: 400px;
+    padding: 10px 0;
+    background-color: #4961f6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25em;
+  }
+}/*# sourceMappingURL=main.css.map */
