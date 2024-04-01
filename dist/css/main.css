@@ -69,6 +69,11 @@ small,
   font-size: 0.64em;
 }
 
+.max-width-footer {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     height: 70px;
@@ -284,6 +289,37 @@ small,
   .footer-container .socials .socials-container .stores img {
     width: 150px;
   }
+  .copyright {
+    margin: 25px 0;
+  }
+  .copyright .copyright-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .copyright .copyright-container .logo-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright .copyright-container .logo-year img:hover {
+    cursor: pointer;
+  }
+  .copyright .copyright-container .logo-year .firstp {
+    margin-right: 15px;
+  }
+  .copyright .copyright-container .logo-year .firstp:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .copyright .copyright-container .terms {
+    display: flex;
+    justify-content: space-around;
+  }
+  .copyright .copyright-container .terms p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 }
 @media screen and (min-width: 768px) {
   .navbar {
@@ -470,7 +506,7 @@ small,
     cursor: pointer;
   }
   .list-items {
-    margin: 25px 0;
+    margin: 15px 0;
   }
   .list-items .list-items-container {
     display: flex;
@@ -541,6 +577,36 @@ small,
   }
   .socials .socials-container .stores img {
     width: 150px;
+  }
+  .copyright .copyright-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25px;
+  }
+  .copyright .copyright-container .logo-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright .copyright-container .logo-year img:hover {
+    cursor: pointer;
+  }
+  .copyright .copyright-container .logo-year .firstp {
+    margin-right: 15px;
+  }
+  .copyright .copyright-container .logo-year .firstp:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .copyright .copyright-container .terms {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+  }
+  .copyright .copyright-container .terms p:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -829,9 +895,45 @@ small,
   }
   .socials .socials-container .stores {
     margin-left: auto;
-    margin-right: 25px;
   }
   .socials .socials-container .stores img {
     width: 150px;
+  }
+  .copyright {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .copyright .copyright-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .copyright .copyright-container .logo-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+  }
+  .copyright .copyright-container .logo-year img:hover {
+    cursor: pointer;
+  }
+  .copyright .copyright-container .logo-year .firstp {
+    margin-right: 15px;
+  }
+  .copyright .copyright-container .logo-year .firstp:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .copyright .copyright-container .terms {
+    display: flex;
+    gap: 25px;
+    margin-right: 25px;
+    justify-content: space-around;
+  }
+  .copyright .copyright-container .terms p:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }/*# sourceMappingURL=main.css.map */
