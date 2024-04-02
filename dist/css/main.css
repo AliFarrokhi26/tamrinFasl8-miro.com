@@ -329,6 +329,7 @@ small,
   }
   .reasons .reasons-container {
     text-align: center;
+    margin-bottom: 25px;
     gap: 5px;
   }
   .reasons .reasons-container h4, .reasons .reasons-container h6 {
@@ -407,8 +408,44 @@ small,
     margin: 15px 0;
     font-size: 16px;
   }
+  .lastpart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+  }
+  .lastpart .lastpart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 80%;
+  }
+  .lastpart .lastpart-container h1 {
+    font-size: 25px;
+  }
+  .lastpart .lastpart-container p {
+    font-size: 15px;
+  }
+  .lastpart .lastpart-container button {
+    border: none;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: bold;
+  }
+  .lastpart .lastpart-container button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  .lastpart .lastpart-container img {
+    width: 100%;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .navbar {
     height: 75px;
     box-shadow: 0 0 10px gray;
@@ -752,6 +789,72 @@ small,
   .reasons .reasons-items .rlists p {
     margin-top: auto;
   }
+  .three-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+  }
+  .three-step .three-step-container {
+    max-width: 1250px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  .three-step .three-step-container .tstitle h3 {
+    font-weight: normal;
+    text-align: center;
+  }
+  .three-step .three-step-container .step-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .three-step .three-step-container .step-one img {
+    width: 100%;
+  }
+  .three-step .three-step-container .step-one .step-one-text p {
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  .lastpart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+  }
+  .lastpart .lastpart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 80%;
+  }
+  .lastpart .lastpart-container h1 {
+    font-size: 35px;
+  }
+  .lastpart .lastpart-container p {
+    font-size: 15px;
+  }
+  .lastpart .lastpart-container button {
+    border: none;
+    border: 1px solid #000;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: bold;
+  }
+  .lastpart .lastpart-container button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  .lastpart .lastpart-container img {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .navbar {
@@ -1091,6 +1194,7 @@ small,
     text-align: center;
     gap: 5px;
     max-width: 1250px;
+    margin-bottom: 25px;
   }
   .reasons .reasons-container h4, .reasons .reasons-container h6 {
     font-weight: normal;
@@ -1137,5 +1241,78 @@ small,
   }
   .reasons .reasons-items .rlists p {
     margin-top: auto;
+  }
+  .three-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+  }
+  .three-step .three-step-container {
+    max-width: 1250px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  .three-step .three-step-container .tstitle h3 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 35px;
+  }
+  .three-step .three-step-container .step-one {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 45px;
+    padding: 0 25px;
+  }
+  .three-step .three-step-container .step-one img {
+    width: 50%;
+  }
+  .three-step .three-step-container .step-one .step-one-text {
+    text-align: strat;
+  }
+  .three-step .three-step-container .step-one .step-one-text p {
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  .lastpart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+  }
+  .lastpart .lastpart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 80%;
+  }
+  .lastpart .lastpart-container h1 {
+    font-size: 45px;
+  }
+  .lastpart .lastpart-container p {
+    font-size: 20px;
+  }
+  .lastpart .lastpart-container button {
+    border: none;
+    border: 1px solid #000;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: bold;
+  }
+  .lastpart .lastpart-container button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  .lastpart .lastpart-container img {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
