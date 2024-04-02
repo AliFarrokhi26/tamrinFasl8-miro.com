@@ -418,10 +418,48 @@
         }
     }
 
+    .three-step{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 35px 0;
+
+        .three-step-container{
+            max-width: 1250px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            .tstitle{
+                h3{
+                    font-weight: normal;
+                    text-align: center;
+
+                }
+
+            }
+            .step-one{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 100%;
+                }
+                .step-one-text{
+                    p{
+                        margin: 15px 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 
+//!-----------------
 @media screen and (min-width: 768px) {
 
     .navbar {
@@ -829,6 +867,70 @@
                 p:hover {
                     cursor: pointer;
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+    .reasons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+        
+        .reasons-container{
+            // display: inline-flex;
+            // flex-direction: column;
+            text-align: center;
+            gap: 5px;
+            margin-bottom: 25px;
+            h4,h6{
+                font-weight: normal;
+            }
+            h4{
+                font-size: 25px;
+            }
+            h6{
+                font-size: 15px;
+            }
+            p{
+                display: inline;
+                padding: 5px 10px;
+                border-radius: 5px;
+                // background-color: red;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $li-hover-color;
+                }
+
+            }
+
+        }
+        .reasons-items{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            .rlists{
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 15px;
+                .rpic{
+                    width: 250px;
+                    img{
+                        width: 250px;
+                        overflow: hidden;
+                        border-radius: 15px 15px 0 0;
+                    }
+                }
+
+                h3{
+                    margin-top: 55px;
+                }
+                p{
+                    margin-top: auto;
                 }
             }
         }
@@ -1285,6 +1387,72 @@
                 p:hover {
                     cursor: pointer;
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .reasons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+        
+        .reasons-container{
+            // display: inline-flex;
+            // flex-direction: column;
+            text-align: center;
+            gap: 5px;
+            max-width: 1250px;
+            h4,h6{
+                font-weight: normal;
+            }
+            h4{
+                font-size: 25px;
+            }
+            h6{
+                font-size: 15px;
+            }
+            p{
+                display: inline;
+                padding: 5px 10px;
+                border-radius: 5px;
+                // background-color: red;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $li-hover-color;
+                }
+
+            }
+
+        }
+        .reasons-items{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            max-width: 1250px;
+            gap: 15px;
+            .rlists{
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 15px;
+                .rpic{
+                    width: 250px;
+                    img{
+                        width: 250px;
+                        overflow: hidden;
+                        border-radius: 15px 15px 0 0;
+                    }
+                }
+
+                h3{
+                    margin-top: 55px;
+                }
+                p{
+                    margin-top: auto;
                 }
             }
         }
