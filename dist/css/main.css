@@ -320,6 +320,63 @@ small,
     cursor: pointer;
     text-decoration: underline;
   }
+  .reasons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
+  .reasons .reasons-container {
+    text-align: center;
+    gap: 5px;
+  }
+  .reasons .reasons-container h4, .reasons .reasons-container h6 {
+    font-weight: normal;
+  }
+  .reasons .reasons-container h4 {
+    font-size: 25px;
+  }
+  .reasons .reasons-container h6 {
+    font-size: 15px;
+  }
+  .reasons .reasons-container p {
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .reasons .reasons-container p:hover {
+    cursor: pointer;
+    background-color: rgb(228, 229, 229);
+  }
+  .reasons .reasons-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .reasons .reasons-items .rlists {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  .reasons .reasons-items .rlists .rpic {
+    width: 250px;
+  }
+  .reasons .reasons-items .rlists .rpic img {
+    width: 250px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+  }
+  .reasons .reasons-items .rlists h3 {
+    margin-top: 55px;
+  }
+  .reasons .reasons-items .rlists p {
+    margin-top: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .navbar {
