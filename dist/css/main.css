@@ -332,7 +332,8 @@ small,
     margin-bottom: 25px;
     gap: 5px;
   }
-  .reasons .reasons-container h4, .reasons .reasons-container h6 {
+  .reasons .reasons-container h4,
+  .reasons .reasons-container h6 {
     font-weight: normal;
   }
   .reasons .reasons-container h4 {
@@ -345,7 +346,6 @@ small,
     display: inline;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: red;
   }
   .reasons .reasons-container p:hover {
     cursor: pointer;
@@ -356,27 +356,33 @@ small,
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  .reasons .reasons-items .rlists {
+  .reasons .reasons-items .rbox {
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+  .reasons .reasons-items .rbox .rleftside {
+    width: 5%;
+    background-color: #ffc107;
+    border-radius: 15px 0 0 15px;
+  }
+  .reasons .reasons-items .rbox .rrightside {
+    width: 95%;
+  }
+  .reasons .reasons-items .rbox .rrightside .rlists {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 300px;
-    border: 1px solid black;
-    border-radius: 15px;
+    height: 350px;
   }
-  .reasons .reasons-items .rlists .rpic {
+  .reasons .reasons-items .rbox .rrightside .rlists .rpic {
     width: 250px;
   }
-  .reasons .reasons-items .rlists .rpic img {
-    width: 250px;
-    overflow: hidden;
-    border-radius: 15px 15px 0 0;
+  .reasons .reasons-items .rbox .rrightside .rlists .rpic img {
+    width: 100%;
   }
-  .reasons .reasons-items .rlists h3 {
-    margin-top: 55px;
-  }
-  .reasons .reasons-items .rlists p {
-    margin-top: auto;
+  .reasons .reasons-items .rbox .rrightside .rlists .rtext {
+    padding-left: 15px;
+    text-align: start;
   }
   .three-step {
     display: flex;
@@ -778,10 +784,11 @@ small,
   }
   .reasons .reasons-container {
     text-align: center;
-    gap: 5px;
     margin-bottom: 25px;
+    gap: 5px;
   }
-  .reasons .reasons-container h4, .reasons .reasons-container h6 {
+  .reasons .reasons-container h4,
+  .reasons .reasons-container h6 {
     font-weight: normal;
   }
   .reasons .reasons-container h4 {
@@ -802,29 +809,35 @@ small,
   .reasons .reasons-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 15px;
   }
-  .reasons .reasons-items .rlists {
+  .reasons .reasons-items .rbox {
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+  .reasons .reasons-items .rbox .rleftside {
+    width: 5%;
+    background-color: #ffc107;
+    border-radius: 15px 0 0 15px;
+  }
+  .reasons .reasons-items .rbox .rrightside {
+    width: 95%;
+  }
+  .reasons .reasons-items .rbox .rrightside .rlists {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 300px;
-    border: 1px solid black;
-    border-radius: 15px;
+    height: 350px;
   }
-  .reasons .reasons-items .rlists .rpic {
+  .reasons .reasons-items .rbox .rrightside .rlists .rpic {
     width: 250px;
   }
-  .reasons .reasons-items .rlists .rpic img {
-    width: 250px;
-    overflow: hidden;
-    border-radius: 15px 15px 0 0;
+  .reasons .reasons-items .rbox .rrightside .rlists .rpic img {
+    width: 100%;
   }
-  .reasons .reasons-items .rlists h3 {
-    margin-top: 55px;
-  }
-  .reasons .reasons-items .rlists p {
-    margin-top: auto;
+  .reasons .reasons-items .rbox .rrightside .rlists .rtext {
+    padding-left: 15px;
+    text-align: start;
   }
   .three-step {
     display: flex;
@@ -1265,12 +1278,13 @@ small,
     margin: 15px 0;
   }
   .reasons .reasons-container {
-    text-align: center;
-    gap: 5px;
     max-width: 1250px;
+    text-align: center;
     margin-bottom: 25px;
+    gap: 5px;
   }
-  .reasons .reasons-container h4, .reasons .reasons-container h6 {
+  .reasons .reasons-container h4,
+  .reasons .reasons-container h6 {
     font-weight: normal;
   }
   .reasons .reasons-container h4 {
@@ -1289,32 +1303,38 @@ small,
     background-color: rgb(228, 229, 229);
   }
   .reasons .reasons-items {
+    max-width: 1250px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 1250px;
     gap: 15px;
   }
-  .reasons .reasons-items .rlists {
+  .reasons .reasons-items .rbox {
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+  .reasons .reasons-items .rbox .rleftside {
+    width: 5%;
+    background-color: #ffc107;
+    border-radius: 15px 0 0 15px;
+  }
+  .reasons .reasons-items .rbox .rrightside {
+    width: 95%;
+  }
+  .reasons .reasons-items .rbox .rrightside .rlists {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 300px;
-    border: 1px solid black;
-    border-radius: 15px;
+    height: 350px;
   }
-  .reasons .reasons-items .rlists .rpic {
+  .reasons .reasons-items .rbox .rrightside .rlists .rpic {
     width: 250px;
   }
-  .reasons .reasons-items .rlists .rpic img {
-    width: 250px;
-    overflow: hidden;
-    border-radius: 15px 15px 0 0;
+  .reasons .reasons-items .rbox .rrightside .rlists .rpic img {
+    width: 100%;
   }
-  .reasons .reasons-items .rlists h3 {
-    margin-top: 55px;
-  }
-  .reasons .reasons-items .rlists p {
-    margin-top: auto;
+  .reasons .reasons-items .rbox .rrightside .rlists .rtext {
+    padding-left: 15px;
+    text-align: start;
   }
   .three-step {
     display: flex;
