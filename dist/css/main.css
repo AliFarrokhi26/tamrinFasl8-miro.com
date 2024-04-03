@@ -444,6 +444,43 @@ small,
   .lastpart .lastpart-container img {
     width: 100%;
   }
+  .tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tool .tool-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 15px;
+  }
+  .tool .tool-container .tool-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .tool .tool-container .tool-text h1 {
+    font-size: 30px;
+  }
+  .tool .tool-container .tool-text button {
+    border: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .tool .tool-container .tool-text button:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+  }
+  .tool .tool-container img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .navbar {
@@ -853,6 +890,43 @@ small,
     cursor: pointer;
   }
   .lastpart .lastpart-container img {
+    width: 100%;
+  }
+  .tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tool .tool-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 15px;
+  }
+  .tool .tool-container .tool-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .tool .tool-container .tool-text h1 {
+    font-size: 40px;
+  }
+  .tool .tool-container .tool-text button {
+    border: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .tool .tool-container .tool-text button:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+  }
+  .tool .tool-container img {
     width: 100%;
   }
 }
@@ -1314,5 +1388,43 @@ small,
   }
   .lastpart .lastpart-container img {
     width: 100%;
+  }
+  .tool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+  }
+  .tool .tool-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    gap: 15px;
+  }
+  .tool .tool-container .tool-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .tool .tool-container .tool-text h1 {
+    font-size: 45px;
+  }
+  .tool .tool-container .tool-text button {
+    border: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .tool .tool-container .tool-text button:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+  }
+  .tool .tool-container img {
+    width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
