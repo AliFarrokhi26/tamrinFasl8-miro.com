@@ -487,6 +487,41 @@ small,
   .tool .tool-container img {
     width: 100%;
   }
+  .sixcore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+  }
+  .sixcore .sixcore-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sixcore .sixcore-container .sixcore-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .sixcore .sixcore-container .sixcore-left h1 {
+    font-size: 30px;
+  }
+  .sixcore .sixcore-container .sixcore-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sixcore .sixcore-container .sixcore-right .sixcore-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 15px;
+    border-radius: 10px;
+  }
+  .sixcore .sixcore-container .sixcore-right .sixcore-items:hover {
+    cursor: pointer;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .navbar {
@@ -941,6 +976,43 @@ small,
   }
   .tool .tool-container img {
     width: 100%;
+  }
+  .sixcore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+  }
+  .sixcore .sixcore-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sixcore .sixcore-container .sixcore-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .sixcore .sixcore-container .sixcore-left h1 {
+    font-size: 30px;
+  }
+  .sixcore .sixcore-container .sixcore-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sixcore .sixcore-container .sixcore-right .sixcore-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 15px;
+    border-radius: 10px;
+  }
+  .sixcore .sixcore-container .sixcore-right .sixcore-items:hover {
+    cursor: pointer;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1446,5 +1518,42 @@ small,
   }
   .tool .tool-container img {
     width: 50%;
+  }
+  .sixcore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0;
+  }
+  .sixcore .sixcore-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sixcore .sixcore-container .sixcore-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .sixcore .sixcore-container .sixcore-left h1 {
+    font-size: 30px;
+  }
+  .sixcore .sixcore-container .sixcore-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sixcore .sixcore-container .sixcore-right .sixcore-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 15px;
+    border-radius: 10px;
+  }
+  .sixcore .sixcore-container .sixcore-right .sixcore-items:hover {
+    cursor: pointer;
   }
 }/*# sourceMappingURL=main.css.map */
